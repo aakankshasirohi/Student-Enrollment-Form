@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-------------------------------------------- CSS files ----------------------------------------->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./stylee.css">
+    <title>Student Enrollment Form</title>
+</head>
+
+
+<body>
+
+
+    <!------------------------------------------------ Navbar ----------------------------------------------->
+
+    <nav class="navbar navbar-dark bg-light">
+        <label>Student Enrollment form</label>
+    </nav>
+
+    <!------------------------------------------------Body section start ----------------------------------------------->
+
+    <div class="main">
+        <div class="formcontainer">
+
+            <form id="nameform" onsubmit="return false">
+                <div class="form-group row">
+                    <label for="text" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="nametag" placeholder="Enter Your name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="text" class="col-sm-2 col-form-label">Email Address</label>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email Address">
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <label for="text" class="col-sm-2 col-form-label">Website</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="website" placeholder="Enter web Address">
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <label for="text" class="col-sm-2 col-form-label">Image link</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="imagelink" placeholder="Enter Image Link">
+                    </div>
+
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-2"> Gender</label>
+
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="radio" value="Male" name="gender" id="male">
+                        <label class="form-check-label" for="flexRadioDefault1">Male</label>
+                        <input class="form-check-input" type="radio" value="Female" name="gender" id="female">
+                        <label class="form-check-label" for="flexRadioDefault1">Female</label>
+
+                    </div>
+
+                </div>
+
+                <div class="form-group row">
+
+                    <label class="col-sm-2"> Skills</label>
+                    <div class="col-sm-6">
+
+                        <label class="form-check-label" for="exampleCheck1"> 
+                            <input type="checkbox" class="form-check-input" name="skills" value="HTML" id="exampleCheck1"> HTML
+                        </label>
+
+                        <label class="form-check-label" for="exampleCheck1">  
+                            <input type="checkbox" class="form-check-input" name="skills" value="Java" id="exampleCheck2"> Java
+                        </label>
+
+                        <label class="form-check-label" for="exampleCheck1"> 
+                            <input type="checkbox" class="form-check-input" name="skills" value="CSS" id="exampleCheck3"> CSS
+                        
+                        </label>
+
+                    </div>
+
+                </div>
+                <!--<button class="btn" type="submit" id="submitB"> Enroll Student </button>-->
+                <button type="button" class="btn btn-primary" id="submitB">Enroll Student</button>
+                <button type="reset" class="btn btn-danger" id="clear">Clear</button>
+            </form>
+        </div>
+        <div class="vl"></div>
+        <div class="content">
+            <label>Enroll Students</label>
+            <div class="studcontent">
+                <table id="dataTable">
+                    <tr>
+                        <th>Descriptions</th>
+                        <th>Image</th>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!------------------------------------------------Footer Section start ----------------------------------------------->
+    <footer class="bg-dark text-center text-lg-start">
+        <label class="text-dark">© 2020-2021 Copyright: Freshers training </label>
+        <!-- Copyright -->
+    </footer>
+
+
+
+
+    <!--JavaScript files -->
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
